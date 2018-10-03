@@ -25,7 +25,7 @@ MFRC522 mfrc522(SS_PIN, RST_PIN);
 MFRC522::MIFARE_Key key;
 Servo myServo;
  
-String card1 = "F3 BD CD 8B"; //임산부입니다.
+String card1 = "F3 BD CD 8B"; //임산부입니다.(태그 넘버를 미리 확인하고 기록해두어야 동작함)
 String card2 = "99 2E CA 55"; //임산부가 아닙니다.
 String currentTagId = "";
 boolean state = false;
